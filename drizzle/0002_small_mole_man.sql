@@ -1,0 +1,1 @@
+ALTER TABLE `candidate_profiles` DROP INDEX `candidate_profile_user_idx`;

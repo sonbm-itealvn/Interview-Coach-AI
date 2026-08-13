@@ -1,0 +1,28 @@
+# Project TODO
+
+- [x] Define Drizzle schemas for candidate profiles, documents, document chunks, STAR stories, practice sessions, practice turns, and answer sources with required audit fields.
+- [x] Apply a single database migration for the interview-coach data model and verify the tables.
+- [x] Implement protected tRPC procedures for profile management, document metadata, STAR stories, practice sessions, and practice turns.
+- [x] Add secure S3-backed document upload support for PDF, DOCX, and plain-text files; persist document metadata only in the database.
+- [x] Implement document text extraction, chunking, source-location metadata, and retrieval scoring for CVs, job descriptions, and articles.
+- [x] Implement a deterministic interview-question classifier for personal, experience/project, technical, article, and behavioral categories.
+- [x] Implement English voice transcription using microphone capture with interim transcript rendering and a graceful unsupported-browser fallback.
+- [x] Implement LLM answer generation with structured outline, polished English answer, coaching notes, and source citations.
+- [x] Implement streamed answer rendering in the practice interface instead of waiting for the full response.
+- [x] Build the Scandinavian dashboard shell using the provided DashboardLayout and a responsive navigation structure.
+- [x] Build profile, document library, STAR bank, practice room, and practice history screens.
+- [x] Add a clear source-citation experience that links each generated suggestion to profile fields or document sections/pages.
+- [x] Add a practice-session history view that stores question, transcript, generated guidance, feedback, and timestamps.
+- [x] Document the recommended training strategy: RAG and structured profile data first, then optional fine-tuning with curated examples.
+- [x] Write Vitest coverage for retrieval, classification, prompt construction, and relevant tRPC procedures.
+- [x] Run type checks and tests, inspect server logs, and visually verify desktop and mobile practice flows.
+- [x] Mark completed work, save a project checkpoint, and deliver the project version with operational guidance.
+- [x] Add a normalized answer-source table with audit fields and persist source records for each generated practice turn.
+- [x] Persist parsed outline, sample answer and coaching notes after an SSE answer completes, then expose all items in practice history.
+- [x] Link inline evidence citations in the rendered answer to their specific source cards and source references.
+- [x] Verify the final interview-coach tables after applying the provenance migration.
+- [x] Extend Vitest coverage for retrieval context ranking and protected interview-coach tRPC routes.
+- [x] Add a mocked buildPracticeContext test that verifies article evidence ranks above unrelated profile and STAR data.
+- [x] Add authenticated tRPC tests for profile save, STAR save and practice-history queries using mocked data helpers.
+- [x] Prepare a clean source-code archive with setup, usage, training, schema, migration, and test documentation.
+- [ ] Verify the archive contents and deliver the downloadable source package.
